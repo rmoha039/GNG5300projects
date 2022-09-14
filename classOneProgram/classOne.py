@@ -21,3 +21,24 @@ else:
     print("no such operation")
 
 print("The equation result is: ", operation_result)
+
+# Addition by Rasheeq Mohammad
+num3 = float(input("Input the third number: "))
+
+if operation == "+":
+    operation_result = operation_result + num3
+elif operation == "-":
+    operation_result = operation_result - num3
+elif operation == "*":
+    operation_result = operation_result * num3
+elif operation == "**":
+    operation_result = operation_result ** num3
+elif operation == "/":
+    try:
+        divi_result = operation_result / num3
+    except ZeroDivisionError as e:
+        operation_result = "infinity"
+else:
+    print("no such operation")
+
+print("The equation result is: ", operation_result)
